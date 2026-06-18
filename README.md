@@ -77,6 +77,7 @@ Look for these sections inside the file:
 Portfolio/
 ├── index.html        # everything — HTML + CSS + JS in one file
 ├── README.md         # this file
+├── Pranjal_Patel.pdf # Resume
 └── assets/
     └── profile.jpg  
 ```
