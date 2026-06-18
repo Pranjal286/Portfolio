@@ -1,8 +1,6 @@
 # Pranjal Patel — Portfolio
 
-Single-file, colorful portfolio for an AI/ML and full‑stack engineer — no build step, just HTML + CSS + JS.
-
-This site highlights my experience in fraud and risk modeling, RAG systems, and ML applications in fintech and healthcare.
+This website highlights my experience in fraud and risk modeling, RAG systems, and ML applications in fintech and healthcare.
 
 ## Run locally
 
@@ -80,5 +78,5 @@ Portfolio/
 ├── index.html        # everything — HTML + CSS + JS in one file
 ├── README.md         # this file
 └── assets/
-    └── profile.jpg   # optional profile image (auto-detected)
+    └── profile.jpg  
 ```
