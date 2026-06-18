@@ -1,6 +1,8 @@
 # Pranjal Patel — Portfolio
 
-A single-file, colorful, animated portfolio for an AI/ML engineer. No build step.
+Single-file, colorful portfolio for an AI/ML and full‑stack engineer — no build step, just HTML + CSS + JS.
+
+This site highlights my experience in fraud and risk modeling, RAG systems, and ML applications in fintech and healthcare.
 
 ## Run locally
 
@@ -10,58 +12,73 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## Add your profile photo
+## Profile photo
 
-Your HEIC photo needs a one-time conversion. On macOS, run this in Terminal:
+Add your profile photo at:
 
-```bash
-sips -s format jpeg ~/Downloads/IMG_3706.heic --out ./assets/profile.jpg --resampleHeightWidthMax 800
+```text
+./assets/profile.jpg
 ```
 
-If `profile.jpg` is missing the page automatically falls back to a "PP" initials avatar with a rotating gradient ring.
+If `profile.jpg` is missing, the page falls back to a “PP” initials avatar with a rotating gradient ring.
 
-## Deploy to GitHub Pages
+## Deploy
+
+You can host this portfolio either on GitHub Pages or Vercel.
+
+### GitHub Pages
 
 ```bash
 git init
 git add .
-git commit -m "Initial portfolio"
+git commit -m "Portfolio"
 git branch -M main
-git remote add origin https://github.com/Pranjal286/portfolio.git
+git remote add origin https://github.com/Pranjal286/Portfolio.git
 git push -u origin main
 ```
 
-Then in the repo on github.com:
+Then on github.com:
 
-1. **Settings → Pages**
-2. **Build and deployment → Source: Deploy from a branch**
-3. **Branch:** `main` / **Folder:** `/ (root)` → **Save**
+1. Go to **Settings → Pages**
+2. Under **Build and deployment**, set **Source: Deploy from a branch**
+3. Choose **Branch:** `main` and **Folder:** `/ (root)` → **Save**
 
-Your site goes live at `https://Pranjal286.github.io/portfolio/` in about a minute.
+Your site will be live at a URL like:
 
-### Deploy to Vercel (alternative, like the reference site)
+```text
+https://Pranjal286.github.io/Portfolio/
+```
 
-1. Push the repo to GitHub
-2. Go to [vercel.com/new](https://vercel.com/new), import the repo
-3. Framework preset: **Other** · Root directory: `./` · click Deploy
+### Vercel
 
-Vercel will give you a `*.vercel.app` URL immediately. You can attach a custom domain in **Project Settings → Domains**.
+1. Push this repo to GitHub
+2. Go to [https://vercel.com/new](https://vercel.com/new) and import the repo
+3. Framework preset: **Other** · Root directory: `./` · click **Deploy**
 
-## Customizing
+Vercel will give you a `*.vercel.app` URL. You can attach a custom domain from **Project Settings → Domains**.
 
-All content (text, links, projects) lives directly in `index.html`. Search for:
+## Customizing content
 
-- `Pranjal286` — replace with your GitHub username if it changes
-- `github.com/Pranjal286/credit-risk-scoring` — your fintech project repo
-- `github.com/Pranjal286/clinical-rag-assistant` — your medical project repo
-- Project cards live under `<!-- ===== PROJECTS ===== -->`
+All text (about, skills, experience, projects, contact) lives directly in:
+
+```text
+index.html
+```
+
+Look for these sections inside the file:
+
+- `<!-- ===== ABOUT ===== -->` to adjust the summary and quick facts
+- `<!-- ===== SKILLS ===== -->` to tweak chips / tools
+- `<!-- ===== EXPERIENCE ===== -->` for BlackRock and Cred experience including internship
+- `<!-- ===== PROJECTS ===== -->` for Morph & Split, Brain Tumor Segmentation, Credit Risk and RAG projects
+- `<!-- ===== CONTACT ===== -->` for email, phone, LinkedIn, GitHub
 
 ## Files
 
-```
-portfolio/
+```text
+Portfolio/
 ├── index.html        # everything — HTML + CSS + JS in one file
-├── README.md         # you are here
+├── README.md         # this file
 └── assets/
-    └── profile.jpg   # add your photo here (auto-detected)
+    └── profile.jpg   # optional profile image (auto-detected)
 ```
